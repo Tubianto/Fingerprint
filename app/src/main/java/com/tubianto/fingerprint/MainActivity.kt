@@ -26,4 +26,10 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        sessionManager.setStatusFingerprint("0")
+    }
 }
