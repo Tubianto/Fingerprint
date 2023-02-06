@@ -30,6 +30,6 @@ class MainActivity : AppCompatActivity() {
     override fun onDestroy() {
         super.onDestroy()
 
-        sessionManager.setStatusFingerprint("0")
+        sessionManager.removeData()
     }
 }
